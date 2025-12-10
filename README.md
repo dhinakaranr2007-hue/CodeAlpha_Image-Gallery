@@ -41,7 +41,7 @@ This project is deployed using GitHub Pages for immediate review.
     Open `index.html` directly in your web browser.
 
 ### 📂 Project Structure
-CodeAlpha_Image-Gallery/
+
 ├── index.html
 
 ├── style.css
