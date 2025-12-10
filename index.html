@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Advanced Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Image Gallery</h1>
+        <p>A professional and responsive display with filters and smooth animations.</p>
+    </header>
+
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </div>
+
+    <div class="gallery-container" id="gallery-container">
+        <div class="gallery-item">
+            <img src="images/nature1.jpg" alt="Vibrant forest path with morning dew" data-category="nature" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="images/city1.jpg" alt="Night skyline of a busy metropolis" data-category="city" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="images/abstract1.jpg" alt="Geometric abstract painting with bold colors" data-category="abstract" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="images/nature2.jpg" alt="Snowy mountain peak at sunset" data-category="nature" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="images/city2.jpg" alt="A quiet alleyway in an old European city" data-category="city" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="images/abstract2.jpg" alt="Swirling brushstrokes forming a nebula" data-category="abstract" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="images/nature3.jpg" alt="Macro shot of a flower petal with dew drops" data-category="nature" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+            <img src="images/city3.jpg" alt="Reflections on wet pavement in a rainy city" data-category="city" class="gallery-img">
+        </div>
+        
+    </div>
+
+    <div id="lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-heading">
+        <h2 id="lightbox-heading" style="display:none;">Enlarged Image View</h2>
+        
+        <span class="close-btn" aria-label="Close Lightbox">&times;</span>
+        
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Currently viewed image in gallery">
+        
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+        
+        <a class="prev-btn" aria-label="Previous Image">&#10094;</a>
+        <a class="next-btn" aria-label="Next Image">&#10095;</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
